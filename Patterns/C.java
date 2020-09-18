@@ -1,8 +1,8 @@
 //					sp(2*(n-i-1))	i(n-1)	j(2*i - 1)
-// 1 0 1 0 1 0 1	0				4		7
-//   1 0 1 0 1		2				3		5
-//     1 0 1		4 				2		4
-//       1 			6				1		1
+// 1 0 1 0 1 0 1			0		4		7
+//   1 0 1 0 1				2		3		5
+//     1 0 1				4 		2		4
+//       1 				6		1		1
 // where n= 5  where at odd places = 1 and even places = 0
 
  import java.util.*;
