@@ -2,12 +2,12 @@
 import java.util.Scanner;
 
 
-//            *              n=5   i	sp		J		i=1;i<=n
-//          *   *  				   1	8		1		sp=o;sp<=2*(n-i)
-//        *   *   *   	   		   2    6       2		j=1;j<=i
-//      *   *   *   *			   3	4       3
-//    *   *   *   *    *		   4    2       4
-// 								   5    0       5
+//            *              n=5   i	sp	J		i=1;i<=n
+//          *   *  		   1	8	1		sp=o;sp<=2*(n-i)
+//        *   *   *   	   	   2    6       2		j=1;j<=i
+//      *   *   *   *		   3	4       3
+//    *   *   *   *    *	   4    2       4
+// 				   5    0       5
 public class F {
 
 	public static void main(String[] args) {
