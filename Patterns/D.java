@@ -1,12 +1,12 @@
 
 import java.util.Scanner;
 
-//* * * * *       i n  j  n-i>j      n=5  sp
+//* * * * *       i n  p  n-i>p      n=5  spaces(twice)
 //  * * * *       0    5 		  0
-//    * * *       1    4
-//      * *       2    3
-//        *	  3    2
-//        	  4    1
+//    * * *       1    4		  1	
+//      * *       2    3		  2  
+//        *	  3    2		  3
+//        	  4    1		  4
 //        	  i<n
 
 
