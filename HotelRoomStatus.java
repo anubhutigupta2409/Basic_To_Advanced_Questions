@@ -1,5 +1,7 @@
 //program to display the total number of rooms, number of vacant rooms and filled rooms,
 //where the number of rooms per floor is variable
+//also when user is asked the status of the hotel room then,
+//1 represents filled while 0 represents vacant room
 
 import java.util.*;
 
