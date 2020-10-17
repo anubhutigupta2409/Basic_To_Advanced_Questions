@@ -30,7 +30,7 @@ public class UnionSortedArr
 		//here the status array represents
 		//0 -> element not printed yet
 		//1 -> element printed already
-		//2 -> duplicates for this element exists
+		//>1 -> duplicates for this element exists
 		int status[]=new int[MAX+1];
 
 		//now First element of the array has to be printed as the part of the union
