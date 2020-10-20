@@ -86,6 +86,6 @@ public class UnionSortedArr
 	    for(int i=0;i<n2;i++)
 	    	arr2[i]=sc.nextInt();
 
-        unionArr(arr1, arr2);
+        unionArr(arr1, arr2);//sending to the method
 	}
 }
