@@ -3,7 +3,6 @@ Given an expression string exp. Examine whether the pairs and the orders of “{
 For example, the program should print 'balanced' for exp = “[()]{}{[()()]()}” and 'not balanced' for exp = “[(])”
 
 Input:
-
 The first line of input contains an integer T denoting the number of test cases.  Each test case consists of a string of expression, in a separate line.
 
 Output:
@@ -21,7 +20,6 @@ Input:
 ([]
 
 Output:
-
 balanced
 balanced
 not balanced
