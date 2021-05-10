@@ -17,11 +17,11 @@ class StartingPointOfLoop
 		Node byOne = head, byTwo= head;
 		while(byOne!=null && byTwo!=null && byTwo.next!=null)
 		{
-			if(byOne==byTwo)
-				break;
-
 			byOne=byOne.next;
 			byTwo=byTwo.next.next;
+			
+			if(byOne==byTwo)
+				break;
 		}
 		if(byOne!=byTwo)
 			return null;
