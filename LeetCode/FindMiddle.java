@@ -41,17 +41,17 @@ The number of nodes in the given list will be between 1 and 100.
 
  Odd number of elements
 
- 1 -> 2 -> 3 -> 4 -> 5		1 -> 2 -> 3 -> 4 -> 5		1 -> 2 -> 3 -> 4 -> 5
- f									  f										f
- s								 s								  s
+ 1 -> 2 -> 3 -> 4 -> 5 ; 1 -> 2 -> 3 -> 4 -> 5	;	1 -> 2 -> 3 -> 4 -> 5
+ f									                        f										                       f
+ s								                    s								                    s
 
  fast.next==null 	->		return slow
 
  Even number of elements
 
- 1 -> 2 -> 3 -> 4 -> 5 -> 6		1 -> 2 -> 3 -> 4 -> 5 -> 6		1 -> 2 -> 3 -> 4 -> 5 -> 6		1 -> 2 -> 3 -> 4 -> 5 -> 6
- f										  f											f										f
- s									 s									  s									   s
+ 1 -> 2 -> 3 -> 4 -> 5 -> 6	;	1 -> 2 -> 3 -> 4 -> 5 -> 6	;	1 -> 2 -> 3 -> 4 -> 5 -> 6	;	1 -> 2 -> 3 -> 4 -> 5 -> 6
+ f										                            f											                           f										                          f
+ s									                        s									                        s									                        s
 
  fast==null		->		return slow
  */
