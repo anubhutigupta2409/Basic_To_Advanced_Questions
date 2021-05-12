@@ -48,7 +48,7 @@ public static Node reverseDLL(Node  head)
     }
 
     if(temp!=null)
-        head=temp.prev;//as temp is the second last node of the list
+        head=temp.prev;//as temp is the last node of the list
 
     return head;
 }
