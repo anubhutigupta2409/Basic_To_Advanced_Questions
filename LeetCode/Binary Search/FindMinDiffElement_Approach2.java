@@ -26,7 +26,7 @@ i  : 0 1 2 3  4			(mid=>0+4/2=>2),start=0,end=4
      s   m    e			(arr[mid]<ele), start=mid+1, start=3, mid=(3+4)/2==>3
            s  e
            m			(arr[mid]<ele), start=mid+1, start=4, mid=(4+4)/2==>4
-           	  e,s,m		(arr[mid]>ele), end=mid-1, end=3
+              e,s,m		(arr[mid]>ele), end=mid-1, end=3
            e  s,m		(end>start), loop exits
 
 
