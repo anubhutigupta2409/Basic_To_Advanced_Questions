@@ -34,8 +34,8 @@ The idea is to use Binary Search. We fix a value for the number of pages as mid 
 minimum and maximum as max-of-all-pages and sum-of-all-pages respectively. If a current mid can be a solution, then we search on
 the lower half, else we search in higher half.
 Now the question arises, how to check if a mid value is feasible or not? Basically, we need to check if we can assign pages to
-all students in a way that the maximum number doesn’t exceed current value. To do this, we sequentially assign pages to every
-student while the current number of assigned pages doesn’t exceed the value. In this process, if the number of students becomes
+all students in a way that the maximum number doesnâ€™t exceed current value. To do this, we sequentially assign pages to every
+student while the current number of assigned pages doesnâ€™t exceed the value. In this process, if the number of students becomes
 more than m, then the solution is not feasible. Else feasible.
 */
 
@@ -52,9 +52,9 @@ min           : 60 <--answer
 _______>___<___<_________________
 |      | |||   |                |			start=40, end=100, mid=70 ; s1=10,20,30  s2=40 #=k res=70 {move left}
 40     55|||   70               100			start=40, end=70,  mid=55 ; s1=10,20  s2=30  s3=40 #>k  {move right}
-         |||								start=55, end=70,  mid=62 ; s1=10,20,30  s2=40 #=k res=62 {move left}
-        58|62								start=55, end=62,  mid=58 ; s1=10,20  s2=30  s3=40  #>k  {move right}
-          60								start=58, end=62,  mid=60 ; s1=10,20,30  s2=40 #=k res=60 <--answer
+         |||						start=55, end=70,  mid=62 ; s1=10,20,30  s2=40 #=k res=62 {move left}
+        58|62						start=55, end=62,  mid=58 ; s1=10,20  s2=30  s3=40  #>k  {move right}
+          60						start=58, end=62,  mid=60 ; s1=10,20,30  s2=40 #=k res=60 <--answer
 */
 public class AllocateMinimumNumberOfPages
 {
