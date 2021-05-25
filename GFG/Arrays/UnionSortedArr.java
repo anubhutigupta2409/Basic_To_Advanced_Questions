@@ -12,6 +12,16 @@ Input : arr1[] = {2, 5, 6}
 Output : Union : {2, 4, 5, 6, 8, 10}
 
 */
+/*
+using merging technique in a way
+naive approachh-->>
+Since they are sorted arrays, 
+1.if arr1[i]<arr2[j] union.add(arr1[i]) i++
+2.if arr1[i]>arr2[j] union.add(arr2[j]) j++
+3.else union.add(arr1[i]) i++, j++
+
+but this doesn't handle duplicates, the following approach does
+*/
 
 import java.util.*;
 
