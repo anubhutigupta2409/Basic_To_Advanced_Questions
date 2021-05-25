@@ -14,10 +14,10 @@ Note: Order of elements is not important here.
 Approach--> Two pointer algorithm
 1. left=0, right=n-1 ; quick question what are the temporary right positions for left and right? a[left]-->-ve and a[right]-->+ve
 2. left		right		operation
-   -ve		-ve			l++
-   -ve		+ve			l++,r--
-   +ve		-ve			swap, l++,r--
-   +ve		+ve			r--
+   -ve		-ve		l++
+   -ve		+ve		l++,r--
+   +ve		-ve		swap, l++,r--
+   +ve		+ve		r--
 */
 public class NegLeftPosRight2
 {
