@@ -80,7 +80,7 @@ public class MaxAreaHistogram
 
         Stack<Pair> stk = new Stack<>();
 
-        //nearest greater to left
+        //nearest smaller to left
         for(int i=0; i<n;i++)
         {
             while(!stk.empty() && stk.peek().element >= hist[i])
@@ -96,7 +96,7 @@ public class MaxAreaHistogram
 
 		stk.clear();
 
-        //nearest greater to right
+        //nearest smaller to right
         for(int i= n-1; i>=0;i--)
         {
             while(!stk.empty() && stk.peek().element >= hist[i])
