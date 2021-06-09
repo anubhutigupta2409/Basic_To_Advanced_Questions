@@ -37,33 +37,13 @@ Constraints:
 
 /*
 Approach-->
-1/count number of nodes in both the lists
-2.add required number of zeroes in the shorter list
-3. reverse both the lists
-4.add the reverse lists as leftmost is the least significant
-5.reverse the answer and return it
+1.reverse both the lists
+2.add the reverse lists as leftmost is the least significant
+3.reverse the answer and return it
 */
 class AddTwoNumbersRightMostLeastSignificant{
     //Function to add two numbers represented by linked list.
-    static int count (Node head)
-    {
-        int count=0;
-        while(head!=null)
-        {
-            head=head.next;
-            count++;
-        }
-        return count;
-    }
-    static Node push(Node head, int data)
-    {
-        Node node = new Node(data);
-        if(head!=null)
-            node.next = head;
-
-        head = node;
-        return head;
-    }
+    
     static Node reverse(Node head)
     {
         Node curr=head, prev=null, next=null;
@@ -82,20 +62,11 @@ class AddTwoNumbersRightMostLeastSignificant{
     static Node addTwoLists(Node first, Node second){
         // code here
         // return head of sum list
-        int count1 = count(first);
-        int count2 = count(second);
-
-        if(count1> count2)
-        {
-            for(int i=0;i<count1-count2;i++)
-                second = push(second,0);
-        }
-        else if(count1< count2)
-        {
-            for(int i=0;i<count2-count1;i++)
-                first = push(first,0);
-        }
-
+        if(first==null)
+            return second;
+        if(second == null)
+               return first;
+        
         first = reverse(first);
         second = reverse(second);
 
