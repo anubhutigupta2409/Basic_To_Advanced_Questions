@@ -54,22 +54,22 @@ public class RotateDLLByN_Nodes
 		curr.next=head;
 		/*
 		null <- a <-> b <-> c <-> d <-> e -> a
-				h    nth nth.next      curr(last)
+			h    nth nth.next      curr(last)
 		*/
 		head.prev=curr;
 /*
 		   e <- a <-> b <-> c <-> d <-> e -> a
-				h    nth nth.next      curr(last)
+			h    nth nth.next      curr(last)
 		*/
 		head=NthNode.next;
 /*
 		   e <- a <-> b <-> c <-> d <-> e -> a
-				     nth    h        curr(last)
+			     nth    h        curr(last)
 		*/
 		head.prev=null;
 /*
 		   e <- a <-> b -> c <-> d <-> e -> a
-				     nth    h        curr(last)
+			     nth    h        curr(last)
 		*/
 		NthNode.next=null;
 		/*
