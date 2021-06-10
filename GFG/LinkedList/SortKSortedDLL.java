@@ -58,7 +58,9 @@ public class SortKSortedDLL
 				pq.peek().prev=last;
 				last=pq.peek();
 			}
-
+			
+			pq.poll();
+			
 			if(head!=null)
 			{
 				pq.add(head);
@@ -66,7 +68,7 @@ public class SortKSortedDLL
 			}
 		}
 
-		last=last.next;
+		last.next=null;
 
 		return newHead;
 	}
