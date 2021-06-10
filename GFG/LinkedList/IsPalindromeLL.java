@@ -67,25 +67,15 @@ class IsPalindromeLL
     }
     boolean compare(Node head1, Node head2)
     {
-        Node temp1=head1;
-        Node temp2=head2;
-
-        while(temp1!=null && temp2!=null)
+       while(head1!=null && head2!=null)
         {
-            if(temp1.data==temp2.data)
-            {
-                temp1=temp1.next;
-                temp2=temp2.next;
-            }
-            else
+            if(head1.val!=head2.val)
                 return false;
+            
+            head1=head1.next;
+            head2=head2.next;
         }
-
-        //both becomes empty then yes equal
-        if(temp1==null && temp2==null)
-            return true;
-
-        return false;
+        return true;
     }
     boolean isPalindrome(Node head)
     {
