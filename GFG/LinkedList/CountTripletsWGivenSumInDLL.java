@@ -18,7 +18,7 @@ The triplets are:
 Approach-->
 Traverse the doubly linked list from left to right. For each current node during the traversal, initailze two pointers
 first = pointer to the node next to the current node and last = pointer to the last node of the list. Now, count pairs in the
-list from first to last pointer that sum up to value (x – current node’s data) (algorithm described in this post). Add this count
+list from first to last pointer that sum up to value (x â€“ current nodeâ€™s data). Add this count
 to the total_count of triplets. Pointer to the last node can be found only once in the beginning.
 
 */
