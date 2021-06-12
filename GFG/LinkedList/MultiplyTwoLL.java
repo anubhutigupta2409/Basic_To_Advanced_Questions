@@ -59,7 +59,7 @@ class MultiplyTwoLL{
 
     // Return multiplication of
     // two numbers
-    return ((num1%m)*(num2&m))%m;
+    return ((num1%m)*(num2%m))%m;
 
    }
 }
