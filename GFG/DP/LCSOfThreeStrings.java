@@ -56,12 +56,7 @@ class LCSOfThreeStrings
                 if( (A.charAt(i-1)==B.charAt(j-1)) && (A.charAt(i-1)==C.charAt(k-1)) )
                     dp[i][j][k] = 1 + dp[i-1][j-1][k-1];
                 else
-                {
-                    int val1 = Math.max( dp[i-1][j][k] , Math.max( dp[i][j-1][k] , dp[i][j][k-1]));
-                    int val2 = Math.max( dp[i-1][j-1][k] , Math.max( dp[i-1][j][k-1] , dp[i][j-1][k-1]));
-
-                    dp[i][j][k] = Math.max(val1, val2);
-                }
+                     dp[i][j][k] = Math.max( dp[i-1][j][k] , Math.max( dp[i][j-1][k] , dp[i][j][k-1]));
             }
         }
     }
