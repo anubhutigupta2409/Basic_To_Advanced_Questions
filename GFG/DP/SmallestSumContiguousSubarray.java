@@ -1,7 +1,6 @@
 /*
-Smallest sum contiguous subarray
-Difficulty Level : Easy
-Last Updated : 19 May, 2021
+Smallest sum contiguous subarray
+
 Given an array containing n integers. The problem is to find the sum of the elements of the contiguous subarray having the smallest(minimum) sum.
 Examples:
 
