@@ -40,6 +40,8 @@ nums is a "pigeon" and each distinct number that can appear in nums is a "pigeon
 distinct possible numbers, the pigeonhole principle implies that at least one of the numbers is duplicated.
 
 using tortoise and hare approach, just the way we find the starting point of the cycle in a linked list
+Reason for why this works-->
+https://leetcode.com/problems/find-the-duplicate-number/discuss/72846/My-easy-understood-solution-with-O(n)-time-and-O(1)-space-without-modifying-the-array.-With-clear-explanation./75491
 */
 
 class DuplicatesInArray{
