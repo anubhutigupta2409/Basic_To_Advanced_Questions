@@ -1,2 +1,2 @@
 # Basic_To_Advanced_Questions
-I push codes for all the questions be it advanced or basic, into this repository.
+A dedicated github repository, which consists solutions to problems on Data Structures and Algorithms from various coding websites. The repository as a whole is an amazing collection of questions, for building problem solving skills.
