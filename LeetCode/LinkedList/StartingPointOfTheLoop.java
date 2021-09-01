@@ -47,6 +47,10 @@ pos is -1 or a valid index in the linked-list.
 
 Follow up: Can you solve it using O(1) (i.e. constant) memory?
 */
+
+/*
+Logic --> https://www.youtube.com/watch?v=LUm2ABqAs1w
+*/
 public class StartingPointOfTheLoop {
     public ListNode detectCycle(ListNode head) {
 
