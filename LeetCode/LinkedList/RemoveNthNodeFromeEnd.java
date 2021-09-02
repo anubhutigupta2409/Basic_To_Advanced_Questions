@@ -31,6 +31,42 @@ The number of nodes in the list is sz.
 
 Follow up: Could you do this in one pass?
 */
+
+/*
+
+//Brute Force-->
+
+
+class Solution {
+    private int count(ListNode head)
+    {
+        if(head.next==null)
+            return 1;
+        
+        return 1 + count(head.next);
+    }
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+     
+        int count = count(head);
+        
+        if(count==1)
+            return null;
+        if(count==n)
+            return head.next;//means head to be deleted
+        
+        ListNode curr = head, prev = head;
+        
+        for(int i=1;i<=count-n;i++)
+        {
+            prev = curr;
+            curr = curr.next;
+        }
+        
+        prev.next = curr.next;
+        return head;
+    }
+}
+*/
 class RemoveNthNodeFromeEnd {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         
