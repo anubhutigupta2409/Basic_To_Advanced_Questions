@@ -36,7 +36,6 @@ Follow up: Could you do this in one pass?
 
 //Brute Force-->
 
-
 class Solution {
     private int count(ListNode head)
     {
