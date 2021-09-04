@@ -57,6 +57,7 @@ class SwapPairs{
 
 //iterative
 class Solution {
+ 
     public ListNode swapPairs(ListNode head) {
 
         //base condition
