@@ -72,3 +72,43 @@ class DiameterOfBinaryTree {
         return a.ans-1;
     }
 }
+
+//Aditya Verma explanation -->
+
+class A
+{
+    int res;
+    A(int res)
+    {
+        this.res = res;
+    }
+}
+class Solution {
+    private int solve(TreeNode root, A a)
+    {
+        //base 
+        if(root==null)
+            return 0;
+        
+        //hypothesis
+        int leftD = solve(root.left,a);
+        int rightD = solve(root.right,a);
+        
+        //induction
+        int temp = 1 + Math.max(leftD,rightD);
+        int ans = Math.max(temp , 1+leftD+rightD);
+        
+        a.res = Math.max(a.res,ans);
+        
+        return temp;
+    }
+    public int diameterOfBinaryTree(TreeNode root) {
+        
+        A a = new A(Integer.MIN_VALUE);
+        
+        int x = solve(root,a);
+        
+        return a.res-1;
+        
+    }
+}
