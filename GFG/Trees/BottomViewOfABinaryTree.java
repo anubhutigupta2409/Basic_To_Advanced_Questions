@@ -105,7 +105,7 @@ class BottomViewOfABinaryTree
             maxLevel=Math.max(currV,maxLevel);
 
             //just update the value
-            map.put(currV,curr.node.data);
+            map.put(currV,curr.node.data);//keep adding all the nodes of a particular vlevel
 
             if(curr.node.left!=null)
                 q.add(new TreeData(currV-1,curr.node.left));
