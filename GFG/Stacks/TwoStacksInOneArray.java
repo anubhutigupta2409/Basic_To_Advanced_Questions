@@ -49,7 +49,7 @@ class TwoStacksInOneArray
 {
     // sq is the object of class TwoStack
 
-    /* The method push to push element into the stack 2 */
+    /* The method push to push element into the stack 1*/
     void push1(int x, TwoStack sq)
     {
         sq.arr[++sq.top1]=x;
