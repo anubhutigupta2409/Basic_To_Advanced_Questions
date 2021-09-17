@@ -28,6 +28,7 @@ Constraints:
 s[i] is '(', or ')'.
 */
 
+
 class LongestValidParentheses {
     public int longestValidParentheses(String s) {
         
