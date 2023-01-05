@@ -30,6 +30,10 @@ n == nums4.length
 1 <= n <= 200
 -228 <= nums1[i], nums2[i], nums3[i], nums4[i] <= 228
 */
+/*
+Approach-->
+https://leetcode.com/problems/4sum-ii/solutions/1740606/going-from-o-n-4-o-n-3-o-n-2-java-c/
+*/
 
 class Solution {
     public int fourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4) {
